@@ -95,7 +95,7 @@
       // Add today's food list
       if (isset($_POST['number']) && isset($_POST['namae'])){
         if (isset($_REQUEST["token"]) && isset($_SESSION["token"]) && $_REQUEST["token"] == $_SESSION["token"]){
-          addToday($dbconn);
+          addToday($dbconn,$today);
         }
       }
       // make token

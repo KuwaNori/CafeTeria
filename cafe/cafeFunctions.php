@@ -83,7 +83,7 @@ function getImg($dbconn,$line){
   $img = pg_fetch_row($kkimg);
   return $img[0];
 }
-function addToday($dbconn){
+function addToday($dbconn,$today){
   $fid = $_POST['fid'];
   $number =$_POST['number'];
   $namae = $_POST['namae'];
