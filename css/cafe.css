@@ -1,0 +1,70 @@
+.item input[type="button"]{
+  display:none;
+}
+input[type="file"]{
+  display: none;
+}
+.upload p{
+  margin-bottom: 8px;
+}
+.upload{
+  margin-top: 20px;
+  width: 40%;
+  margin: 0 auto;
+}
+.tuika{
+  text-align: center;
+  background-color: #e8e8e8;
+  border: 1px solid #d8d8d8;
+}
+.tuika:hover{
+  background-color:#ddd;
+}
+
+/* ポップアップ */
+.bgd{
+  position: fixed;
+  overflow: hidden;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:radial-gradient(circle at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+  z-index: 10;
+}
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+  width:70vw;
+  height:50vh;
+  /* ここより下がポップアップのデザイン */
+  background-color: #fff;
+  border:3px solid #606060;
+  border-radius: 10px;
+  transition:1.0s;
+}
+.popup form{
+  width: 80%;
+  margin: 0 auto;
+}
+textarea{
+  width: 50vw;
+  font-size: 15px;
+  padding: 4px 4px 4px 4px;
+}
+.number{
+  width: 40px;
+}
+.chosen{
+  width: 100px;
+}
+#preview{
+  border: 2px dashed #afafaf;
+  height: 120px;
+  width: 90px;
+  margin-top: 10px;
+  object-fit: cover;
+}

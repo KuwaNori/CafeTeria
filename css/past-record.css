@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+  color: #000;
+}
+li {
+  list-style:none;
+}
+.naka{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* キープ中の食材　*/
+.k-logo h1{
+  font-size:18px;
+  font-weight:normal;
+  text-align:center;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 3px;
+}
+
+/* 箱 */
+.k-box{
+  display: flex;
+  border:1px solid #3f3f3f;
+  border-radius:5px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* 食材の名前 */
+.k-left{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  padding-right:10px;
+  border-right:1px solid #3f3f3f;
+  width:70%;
+}
+/* 本日中 */
+.k-right{
+  padding-top:10px;
+  padding-bottom:10px;
+  margin: 0 auto;
+}
+
+
+/* 受け取り履歴 */
+.r-logo h1{
+  font-size:18px;
+  font-weight:normal;
+  text-align:center;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 3px;
+}
+/*　箱　*/
+.r-box{
+  display:flex;
+  border:1px solid #3f3f3f;
+  border-radius:5px;
+  margin-bottom:5px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* 食材の名前　*/
+.r-left {
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  padding-right:10px;
+  border-right:1px solid #3f3f3f;
+  width:70%;
+}
+/* 年　year */
+.r-right1{
+  padding-top:5px;
+  padding-left:10px;
+  font-size:10px;
+}
+/* 日付　day */
+.r-right2{
+  padding-top:10px;
+  padding-right:20px;
+  white-space:nowrap;
+}
+@media screen and (max-width:480px) {
+  .k-box{
+    width: 90%;
+  }
+
+  .r-box{
+    width: 90%;
+  }
+}

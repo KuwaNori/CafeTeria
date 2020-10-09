@@ -1,0 +1,39 @@
+*{
+
+}
+span{
+  font-size: 14px;
+  color: #f00;
+}
+label{
+  text-decoration: underline;
+}
+.logsig{
+  align-items: center;
+  border-top: 2px solid #9f9f9f;
+  width: 95vw;
+  padding: 10px;
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+#sendpas{
+  display: none;
+}
+#passform{
+  width: 60vw;
+  animation:show 1s linear 0s;
+}
+#sign{
+  animation:show 1s linear 0s;
+}
+@media screen and (max-width: 450px){
+}
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

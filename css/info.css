@@ -1,0 +1,110 @@
+.info-container{
+  align-items: center;
+}
+.info-tcon{
+  font-size: 20px;
+}
+.info-title{
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.i-flex{
+  display: flex;
+  margin-left: 20%;
+  width: 60%;
+  border-bottom: 1px solid #9f9f9f;
+  margin-bottom: 15px;
+}
+.info-left{
+  width: 50%;
+}
+.info-right{
+  width:  50%;
+}
+.info-submit{
+  margin-bottom: 10px;
+}
+.info-out,.info-change{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%
+}
+.info-pass{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.point{
+  cursor:pointer;
+}
+.c-box{
+  width: 50px;
+  height: 20px;
+}
+/* popup */
+.bgd{
+  position: fixed;
+  overflow: hidden;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:radial-gradient(circle at 50% 50%, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+  z-index: 10;
+}
+.info-pop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+    width:70%;
+    /* ここより下がポップアップのデザイン */
+    background-color: #fff;
+    border-radius: 10px;
+    transition:1.0s;
+}
+#showbtn,#pclose{
+  display: none;
+}
+/* for color selection */
+.pcover{
+  margin-top: 10px;
+  width: 25%;
+}
+.each-color{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+.info-pcolor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.info-submit{
+  text-align: center;
+}
+.info-pinput{
+  margin: 10px;
+}
+.radio-c{
+  /* display: none; */
+}
+@media screen and (min-width: 769px) {
+  .info-container{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .info-title{
+    width: 30%;
+  }
+}

@@ -1,0 +1,66 @@
+.mess{
+  font-family: "MuseoModerno";
+  font-size: 10px;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 112;
+  color: #fff;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.shutlogo{
+  font-size: 15vh;
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 102;
+  color: #000;
+  font-family: "MuseoModerno";
+}
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #090909;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.spinner {
+  position: fixed;
+  overflow: hidden;
+  top: 40%;
+  left: 0%;
+  transform: translate(-50%,-50%);
+  width: 0vw;
+  height: 21vh;
+  background-color: #fff;
+  animation: slide 3.0s;
+  z-index: 101;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+@keyframes slide {
+0% {
+  right: auto;
+  width: 0;
+}
+
+70% {
+  left: auto;
+  width: 100%;
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  width: 100%;
+}
+}
