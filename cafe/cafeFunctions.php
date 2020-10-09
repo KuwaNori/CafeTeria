@@ -63,7 +63,7 @@ function deleteList($dbconn){
   }
   return "";
 }
-//
+//return today's list
 function getTdlist($dbconn,$today){
   $tdlist ="select * from foodstream where time='{$today}' order by id asc;";
   $tdres= pg_query($dbconn,$tdlist) or die('Query failed8: ' . pg_last_error());
@@ -81,6 +81,20 @@ function getImg($dbconn,$line){
   $gimg="select fimg from foodlist where id={$line[5]};";
   $kkimg = pg_query($dbconn,$gimg) or die('Query failed10: ' . pg_last_error());
   $img = pg_fetch_row($kkimg);
-  return $img;
+  return $img[0];
+}
+function addToday($dbconn){
+  $fid = $_POST['fid'];
+  $number =$_POST['number'];
+  $namae = $_POST['namae'];
+  $memo =$_POST['memo'];
+  $add ="insert into foodstream(time,fname,number,fid,memo,restudents) values('{$today}','{$namae}',{$number},{$fid},'{$memo}','-');";
+  pg_query($dbconn,$add) or die('Query failed11: ' . pg_last_error());
+  header('Location: https://gms.gdl.jp/~kuwanori/JulyGroup5/cafe.php');
+}
+function getFdlist($dbconn){
+  $listing="select * from foodlist;";
+  $lis = pg_query($dbconn,$listing) or die('Query failed12: ' . pg_last_error());
+  return $lis;
 }
  ?>
